@@ -1,0 +1,8 @@
+import numpy as np
+
+print("Піднести матриці до степеня:")
+a = np.array([[-1, 0, 2], [0, 1, 0], [1, 2, -1]])
+print("Матриця")
+print(a)
+print("Result")
+print(a ** 2)
