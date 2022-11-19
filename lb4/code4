@@ -1,0 +1,11 @@
+import numpy as np
+
+print("Обчислити визначники:")
+a = np.array([[2, 3, 4], [1, 0, 6], [7, 8, 9]])
+print("Матриця:")
+print (a)
+
+a = np.matrix('2 3 4; 1 0 6; 7 8 9')
+a_det = np.linalg.det(a)
+print("Визначник матриці: ")
+print(format(a_det, '.9g'))
