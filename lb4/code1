@@ -1,0 +1,19 @@
+import numpy as np
+
+print("AB - BA")
+m_sqr_arr = np.array([[1, 1, 1], [0, 1, 1], [0, 0, 1]]) #Задаємо матрицю 3*3 А
+print("Матриця А")
+print(m_sqr_arr)
+m_sqr_arr = np.array([[7, 5, 3], [0, 7, 5], [0, 0, 7]]) #Задаємо матрицю 3*3 B
+print("Матриця B")
+print(m_sqr_arr)
+
+a = np.matrix('1 1 1; 0 1 1; 0 0 1')
+b = np.matrix('7 5 3; 0 7 5; 0 0 7')
+c = a.dot(b)
+a = np.matrix('1 1 1; 0 1 1; 0 0 1')
+b = np.matrix('7 5 3; 0 7 5; 0 0 7')
+c1 = b.dot(a)
+d = c - c1
+print('Result AB - BA')
+print(d)
