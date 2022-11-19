@@ -1,0 +1,14 @@
+import numpy as np
+print("Створіть прямокутну матрицю A, яка має N рядків і M стовпців з випадковими елементами. Визначте середні значення для всіх рядків і стовпців матриці. ")
+arr = [
+    [4, 2, 3, 7],
+    [3, -1, 2, 5],
+    [0, 2, 3, 9]
+]
+print("Matrix:")
+print(arr)
+print("Row average")
+print(np.mean(arr, axis=1))
+print("Column mean")
+print(np.mean(arr, axis=0))
+
