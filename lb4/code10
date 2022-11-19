@@ -1,0 +1,10 @@
+import numpy as np
+print("Перевірка за допомогою методом solve() пакету linalg:")
+A = np.matrix('14 4 6; 5 -3 2; 10 -11 5')
+B = np.matrix('30; 15; 36')
+print('A=', A)
+print('B=', B)
+
+
+X = np.linalg.solve(A, B)
+print('Перевірка X=',X)
