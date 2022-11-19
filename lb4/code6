@@ -1,0 +1,11 @@
+import numpy as np
+
+print("Знайти обернену матрицю:")
+a = np.array([[2, 1, 0, 0], [3, 2, 0, 0], [1, 1, 3, 4], [2, -1, 2, 3]])
+print("Матриця:")
+print (a)
+
+A = np.matrix('2 1 0 0; 3 2 0 0; 1 1 3 4; 2 -1 2 3')
+A_inv = np.linalg.inv(A)
+print("Обернена матриця:")
+print(A_inv)
